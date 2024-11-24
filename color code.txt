@@ -1,0 +1,6 @@
+#0f2a1f  Green
+#cfd7d2 second p
+#40665e grey
+
+#FAF9F6  white
+#013220 green

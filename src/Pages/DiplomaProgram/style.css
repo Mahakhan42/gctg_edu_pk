@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body{
+    background-color: rgb(238, 255, 238) ;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .food-Section {
+    position: relative;
+    color: black;
+    z-index: 1; /* Ensure content is above the background */
+  }
+  
+
+/* //table */
+.table-responsive {
+    max-height: 600px; /* Aap yahan height ko customize kar sakte hain */
+    overflow-y: auto; /* Yahan vertical scrolling enable kar rahe hain */
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+  

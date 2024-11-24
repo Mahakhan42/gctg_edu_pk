@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif; /* Body par Roboto font set karein */
+  font-size: 16px; /* Font size set karein */
+  line-height: 1.5; /* Line height set karein for readability */
+  color: #333; /* Text color set karein */
+  margin: 0; /* Default margin remove karein */
+  padding: 0; /* Default padding remove karein */
+}
+
+/* 1 header */
+.header-One{
+  background-color:#99c29e;
+  padding: 5px;
+}
+
+
+/* 2 header */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+/* Change hover color of dropdown links to green */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #05472A; /* Light green */
+  color: white; /* Text color on hover */
+}
+
+
+/* Left Logo - Adding margin-right */
+.logo-left {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.logo-right {
+  width: 100px;
+  height: auto;
+}
+
+.college-name {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .logo-left, .logo-right {
+    width: 80px;
+    height: auto;
+  }
+
+  .college-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-left, .logo-right {
+    width: 60px;
+    height: auto;
+  }
+
+  .college-name {
+    font-size: 14px;
+  }
+}
+/* 3 header */
+.header3 {
+  background-color:	#05472A   !important;
+}
+
+.header3 .navbar-toggler {
+  border-color: white; 
+}
+
+.header3 .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.header3 .navbar-nav .nav-link {
+  color: white; 
+  margin: 0 15px; /* Links ke beech margin add karein */
+}
+
+.header3 .navbar-nav .nav-link:hover {
+  color: yellow; /* Hover par color change */
+}
+
+.header3 .navbar-nav .nav-link:focus, /* Focus state */
+.header3 .navbar-nav .nav-link:active { /* Active state */
+  color: white; /* Click karne par color white karein */
+}
+
+.header3 .navbar-nav {
+  display: flex; /* Flexbox enable karein */
+  justify-content: center; /* Center mein links ko align karein */
+  margin: 0; /* Navbar ka margin set karein agar chahiye to */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) { /* Adjust according to your needs */
+  .header3 .navbar-nav {
+    justify-content: flex-start; /* Left align links on mobile */
+  }
+
+  .header3 .navbar-nav .nav-link {
+    margin: 0 10px; /* Adjust margin for mobile if needed */
+  }
+}
+
+
+/* Slider */
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust position */
+  width: 100%;
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+  color: #05472A; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+.carousel-caption h5 {
+  margin: 10px 0; /* Margin for spacing */
+}
+/* Inner text styling for the line */
+.line h1 {
+  position: absolute; /* Position text absolutely */
+  left: 50%; /* Center horizontally */
+  transform: translate(-80%, -50%); /* Adjust position to center */
+  color: #05472A; /* Text color */
+  font-weight: bold; /* Bold text */
+  background-color:#fff; /* Optional: Background for visibility */
+  padding: 30px;
+  opacity: 0.8; /* Set opacity for the text */
+  top: 50%; /* Center vertically within the line */
+  width: 50%;
+}
+
+.carousel-item {
+  height: 650px; /* Desired height for larger screens */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image to fit the container */
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 400px; /* Height for mobile screens */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem; /* Smaller caption size for mobile */
+  }
+
+  .line {
+    width: 70%; /* Adjust line width for mobile if necessary */
+  }
+}
+/* //Home */
+/* Home.css */
+.facility-box {
+  padding: 50px;
+  background-color: 	#99c29e;
+  color: white;
+  border: 5px solid  #05472A;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.facility-box:hover{
+  background-color: #05472A;
+}
+
+
+/* Acadmics Programs short course link */
+.custom-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent element */
+  background: none; /* Removes any background */
+}
+.custom-link:hover {
+  color: green; /* Color on hover */
+}
+
+/* ------------------------------------ */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Add margin for spacing */
+
+}
+.contact :hover{
+  background-color: #05472A;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust width for the box size */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #99c29e; /* Background color (customize as needed) */
+  color: white; /* Text color */
+  text-align: center;
+  padding: 20px; /* Add padding for spacing inside the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  border: 5px solid #05472A;
+}
+
+.phone-icon {
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+
+
+/* /---------------------Footer--------------------------------------- */
+.footer {
+  background-color: #05472A; /* Black background for footer */
+  color: white; /* White text color */
+  padding: 40px 20px; /* Padding for spacing */
+}
+
